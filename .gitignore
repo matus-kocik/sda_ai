@@ -3,6 +3,7 @@
 
 ### dotenv ###
 .env
+*.DS_Store
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
