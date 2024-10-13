@@ -1,0 +1,1 @@
+# Using a for loop, calculate the sum of all numbers, that are divisible by both 3 and 5.

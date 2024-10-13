@@ -1,0 +1,14 @@
+First book:
+
+title: The Witcher
+author: Andrzej Sapkowski
+year: 1993
+four_characters: Geralt, Yennefer, Ciri, Dandelion
+
+
+Second book:
+
+title: The Hobbit
+author: J.R.R. Tolkien
+year: 1937
+four_characters: Bilbo, Gandalf, Thorin, Smaug
