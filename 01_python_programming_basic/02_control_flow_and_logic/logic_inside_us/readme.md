@@ -1,6 +1,5 @@
 # Logic inside us (Python)
 
-
 ### This is a guided project
 
 To learn the most, try and implement it on your own first, and check the solution only when you feel necessary. However, if you feel completely stuck, feel free to check the step-by-step solution guide
@@ -44,6 +43,7 @@ Check if the first book is newer than 2000 using its **is_published_after_2000**
 Concatenate the title of the books with a string indicating if the book is newer or older than 2000.
 
 1. [√] The title of the first book is displayed with appropriate text indicating if it's newer or older than 2000.
+
 2. [√] The title of the second book is displayed with appropriate text indicating if it's newer or older than 2000.
 
 ### [√] Check the age of books switched
@@ -51,6 +51,7 @@ Concatenate the title of the books with a string indicating if the book is newer
 Use the not-equal operator (**!=**) for the same result as the previous task.
 
 1. [√] The title of the first book is displayed with appropriate text indicating its publication year relative to 2000.
+
 2. [√] The title of the second book is displayed with appropriate text indicating its publication year relative to 2000.
 
 ### [√] Compare the publishing year
@@ -58,6 +59,7 @@ Use the not-equal operator (**!=**) for the same result as the previous task.
 Use inequality operators to display the book title with a prefix indicating if it's newer or older than 2000.
 
 1. [√] The title of the first book is displayed with text indicating if it's newer or older than 2000.
+
 2. [√] The title of the second book is displayed with text indicating if it's newer or older than 2000.
 
 ### [√] Combine the results using loops and conditionals
