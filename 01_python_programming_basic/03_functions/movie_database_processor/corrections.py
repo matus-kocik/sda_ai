@@ -2,16 +2,16 @@ from data import movies as m
 from pprint import pprint
 
 
-def movieDramas(movies):
+def movieDramas(movies, drama="Drama"):
     list_of_dramas = []
     for movie in movies:
-        for drama in movie["genres"]:
-            if drama == "Drama":
-                list_of_dramas.append(movie["title"])
+        if drama in movie["genres"]:
+            list_of_dramas.append(movie["title"])
     return list_of_dramas
 
-pprint(movieDramas(m))
-pprint(50*"-")
+
+pprint(movieDramas(m, "Comedy"))
+pprint(50 * "-")
 
 
 def findByGenre(genre, movies):
@@ -22,7 +22,8 @@ def findByGenre(genre, movies):
                 list_of_movies_by_genre.append(movie["title"])
     return list_of_movies_by_genre
 
-pprint(findByGenre("Action", m))
+
+# pprint(findByGenre("Action", m))
 pprint(50 * "-")
 
 
@@ -34,11 +35,13 @@ pprint(50 * "-")
 pprint(longestMovie(m))
 pprint(50 * "-") """
 
+
 def longestMovies(movies):
     longest_movie = max(movies, key=lambda movie: movie["runtime"])
     return longest_movie["title"]
 
-pprint(longestMovies(m))
+
+# pprint(longestMovies(m))
 pprint(50 * "-")
 
 
@@ -48,11 +51,9 @@ def longestMovieByGenre(genre, movies):
         if genre in movie["genres"]:
             list_of_movies_by_genre.append(movie)
 
-    longest_movie = max(
-        list_of_movies_by_genre, key=lambda movie: movie["runtime"]
-    )
+    longest_movie = max(list_of_movies_by_genre, key=lambda movie: movie["runtime"])
     return longest_movie["title"]
 
 
-pprint(longestMovieByGenre("Comedy", m))
+# pprint(longestMovieByGenre("Comedy", m))
 pprint(50 * "-")
