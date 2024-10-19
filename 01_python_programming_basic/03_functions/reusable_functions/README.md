@@ -9,11 +9,15 @@ Time to get a better understanding of functions and how to use them. For this, y
 Copy the following data into the data.py file in your project repository:
 
 - The favorite_books list from the Data Around Us project.
+
 - The fav_movies list from the My Top 4 Movies project.
+
 - The best_selling_albums list from the Best Selling Albums project.
 
 1. [√] The data.py file contains a favorite_books variable. The value is the list from the "Data Around Us" project.
+
 2. [√] The data.py file contains a fav_movies variable. The value is the list from the "My Top 4 Movies" project.
+
 3. [√] The data.py file contains a best_selling_albums variable. The value is the list from the "Best Selling Albums" project.
 
 ### [√] Show the average age of objects
