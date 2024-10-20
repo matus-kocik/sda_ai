@@ -12,9 +12,9 @@ def averageAge(array_of_objects, year=datetime.now().year):
     )
 
 
-""" pprint(averageAge(fb))
-pprint(averageAge(fm, 2023))
-pprint(averageAge(bsa)) """
+#pprint(averageAge(fb))
+#pprint(averageAge(fm, 2023))
+#pprint(averageAge(bsa))
 
 pprint(50 * "-")
 
@@ -28,9 +28,9 @@ def average(array_of_objects, key):
     )
 
 
-""" pprint(average(fb, "year"))
-pprint(average(fm, "rating"))
-pprint(average(bsa, "sale")) """
+#pprint(average(fb, "year"))
+#pprint(average(fm, "rating"))
+#pprint(average(bsa, "sale"))
 
 pprint(50 * "-")
 
@@ -41,11 +41,11 @@ def latest_or_oldest(array_of_objects, latest=True):
     return min(year) if latest else max(year)
 
 
-""" pprint(latest_or_oldest(fb, True))
-pprint(latest_or_oldest(fm, True))
-pprint(latest_or_oldest(bsa, True))
-pprint(latest_or_oldest(fb, False))
-pprint(latest_or_oldest(fm, False))
-pprint(latest_or_oldest(bsa, False)) """
+#pprint(latest_or_oldest(fb, True))
+#pprint(latest_or_oldest(fm, True))
+#pprint(latest_or_oldest(bsa, True))
+#pprint(latest_or_oldest(fb, False))
+#pprint(latest_or_oldest(fm, False))
+#pprint(latest_or_oldest(bsa, False))
 
 pprint(50 * "-")
