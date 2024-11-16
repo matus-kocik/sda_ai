@@ -18,8 +18,6 @@ def get_random_word(data):
     for line in file:
         country, city = line.strip().split(" | ")
         words.append(country)
-        words.append(city)
 
     word = random.choice(words)
-
     return word
