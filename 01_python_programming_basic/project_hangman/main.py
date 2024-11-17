@@ -17,7 +17,9 @@ def main():
     lives: int = set_lives(difficulty)
     word_to_guess: str = get_random_word()
     hangman_picture: list[str] = get_hangman_pictures(lives)
+
     start_message(player_name, difficulty, lives)
+
     game(word_to_guess, hangman_picture, lives)
 
 
