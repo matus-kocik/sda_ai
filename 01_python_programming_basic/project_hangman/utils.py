@@ -3,7 +3,7 @@ import time
 
 
 def set_game_time_sleep() -> None:
-    time.sleep(0)
+    time.sleep(1)
 
 
 def set_separator(sep: str = "*"):

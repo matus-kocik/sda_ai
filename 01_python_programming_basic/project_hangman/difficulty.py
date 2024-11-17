@@ -1,5 +1,7 @@
+from utils import set_game_time_sleep
+
+
 def get_difficulty() -> str:
-    
 
     player_difficulty: str = input(
         """👉 Please, select difficulty (1, 2, 3 or easy, medium, hard): 
@@ -14,5 +16,5 @@ def get_difficulty() -> str:
         difficulty = "medium"
     else:
         difficulty = "hard"
-
+    set_game_time_sleep()
     return difficulty

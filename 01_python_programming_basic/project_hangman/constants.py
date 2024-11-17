@@ -3,6 +3,14 @@ DATA = "countries-and-capitals.txt"
 HANGMAN: list[str] = [
     """
   +---+
+      |
+      |
+      |
+      |
+      |
+=========""",
+    """
+  +---+
   |   |
       |
       |
