@@ -1,29 +1,27 @@
-import time
 from difficulty import get_difficulty
-from welcome import first_welcome_message, second_welcome_message, get_player_name
-from utils import quit_game
+from game import game
+from hangman_picture import get_hangman_pictures
+from lives import set_lives
+from player_name import get_player_name
+from random_word import get_random_word
+from welcome_message import welcome_message
+from start_message import start_message
 
 
 def main():
-    first_welcome_message()
 
-    name = get_player_name()
-    time.sleep(1)
+    welcome_message()
 
-    quit_game(name)
-    time.sleep(1)
+    player_name: str = get_player_name()
+    difficulty: str = get_difficulty()
+    lives: int = set_lives(difficulty)
+    word_to_guess: str = get_random_word()
+    hangman_picture: list[str] = get_hangman_pictures(lives)
 
-    lives = get_difficulty()
-    time.sleep(1)
+    game(player_name, difficulty, lives, word_to_guess, hangman_picture)
 
-    quit_game(name)
-    time.sleep(1)
+    start_message(player_name, difficulty, lives)
 
-    second_welcome_message(name, lives)
-    time.sleep(1)
-
-    quit_game(name)
-    time.sleep(1)
 
 if __name__ == "__main__":
     main()

@@ -1,23 +1,26 @@
 import sys
-import random
+import time
 
 
-def quit_game(name):
-    quit_choice = input("👉 Type 'Q' to exit or press Enter to continue: \n").lower()
+def set_game_time_sleep() -> None:
+    time.sleep(0)
+
+
+def set_separator(sep: str = "*"):
+    print(100 * sep)
+
+
+def quit_game(player_name: str = "Anonym") -> None:
+    quit_choice: str = input(
+        "👉 Type 'Q' to exit or press Enter to continue: \n"
+    ).lower()
     if quit_choice == "q":
-        print(f"Exiting the game... Goodbye, {name}! 👋")
+        print(f"Exiting the game... Goodbye, {player_name}! 👋")
         sys.exit()
 
 
-def get_random_word(data):
-
-    words = []
-    with open(data) as f:
-        file = f.readlines()
-
-    for line in file:
-        country, city = line.strip().split(" | ")
-        words.append(country)
-
-    word = random.choice(words)
-    return word
+def print_message(messages) -> None:
+    for message in messages:
+        print()
+        print(message)
+        set_game_time_sleep()

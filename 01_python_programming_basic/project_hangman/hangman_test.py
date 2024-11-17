@@ -1,22 +1,4 @@
 
-# KROK 2
-# na základe zvolenej úrovne obtiažnosti nastavte hodnoty
-# za životy hráča
-word_to_guess = "Cairo"  # vzorové údaje, normálne by sa slovo malo vybrať zo súboru countries-and-capitals.txt
-lives = 5  # vzorových údajov, zvyčajne by sa životy mali vyberať na základe náročnosti
-
-
-# KROK 3
-# zobraziť vybrané slovo na uhádnutie so všetkými písmenami nahradenými "_"
-# napríklad namiesto "Cairo" zobrazte "_ _ _ _ _"
-
-
-# KROK 4
-# požiadajte používateľa, aby napísal písmeno
-# tu by ste mali overiť, či napísané písmeno je slovo
-# "QUIT", "Quit", "QUit", "QUIt", "QUIT", "QUIT"... chápeš :)
-# TIP: použite vstavané funkcie horného() alebo spodného() Pythonu
-
 
 # KROK 5
 # overte, či je napísané písmeno už v skúšaných písmenách
